@@ -1,0 +1,816 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY tiger_king "http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#"
+     xml:base="http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:tiger_king="http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#author_of -->
+
+    <owl:ObjectProperty rdf:about="&tiger_king;author_of"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#emergedFrom -->
+
+    <owl:ObjectProperty rdf:about="&tiger_king;emergedFrom"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#explained -->
+
+    <owl:ObjectProperty rdf:about="&tiger_king;explained"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#explained_by -->
+
+    <owl:ObjectProperty rdf:about="&tiger_king;explained_by">
+        <owl:inverseOf rdf:resource="&tiger_king;explained"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#fixedHisEyesUpon -->
+
+    <owl:ObjectProperty rdf:about="&tiger_king;fixedHisEyesUpon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#foretold -->
+
+    <owl:ObjectProperty rdf:about="&tiger_king;foretold"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#gazed -->
+
+    <owl:ObjectProperty rdf:about="&tiger_king;gazed"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#hadEnunciated -->
+
+    <owl:ObjectProperty rdf:about="&tiger_king;hadEnunciated"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#hasAuthor -->
+
+    <owl:ObjectProperty rdf:about="&tiger_king;hasAuthor">
+        <owl:inverseOf rdf:resource="&tiger_king;author_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#hasHero -->
+
+    <owl:ObjectProperty rdf:about="&tiger_king;hasHero">
+        <owl:inverseOf rdf:resource="&tiger_king;hero_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#hasMaharaja -->
+
+    <owl:ObjectProperty rdf:about="&tiger_king;hasMaharaja">
+        <owl:inverseOf rdf:resource="&tiger_king;maharaja_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#hasReached -->
+
+    <owl:ObjectProperty rdf:about="&tiger_king;hasReached"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#hero_of -->
+
+    <owl:ObjectProperty rdf:about="&tiger_king;hero_of"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#identified_as -->
+
+    <owl:ObjectProperty rdf:about="&tiger_king;identified_as"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#maharaja_of -->
+
+    <owl:ObjectProperty rdf:about="&tiger_king;maharaja_of"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#matter_of -->
+
+    <owl:ObjectProperty rdf:about="&tiger_king;matter_of">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#placed -->
+
+    <owl:ObjectProperty rdf:about="&tiger_king;placed">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#uttered -->
+
+    <owl:ObjectProperty rdf:about="&tiger_king;uttered"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#uttered_by -->
+
+    <owl:ObjectProperty rdf:about="&tiger_king;uttered_by">
+        <owl:inverseOf rdf:resource="&tiger_king;uttered"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#hasUttered -->
+
+    <owl:DatatypeProperty rdf:about="&tiger_king;hasUttered"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#Animal -->
+
+    <owl:Class rdf:about="&tiger_king;Animal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#Chief_astrologer -->
+
+    <owl:Class rdf:about="&tiger_king;Chief_astrologer">
+        <rdfs:subClassOf rdf:resource="&tiger_king;Person"/>
+        <owl:disjointWith rdf:resource="&tiger_king;Khiledar-Major"/>
+        <owl:disjointWith rdf:resource="&tiger_king;Tiger_king"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#Conversation -->
+
+    <owl:Class rdf:about="&tiger_king;Conversation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#Event -->
+
+    <owl:Class rdf:about="&tiger_king;Event"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#Khiledar-Major -->
+
+    <owl:Class rdf:about="&tiger_king;Khiledar-Major">
+        <owl:equivalentClass rdf:resource="&tiger_king;Tiger_king"/>
+        <rdfs:subClassOf rdf:resource="&tiger_king;Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#Person -->
+
+    <owl:Class rdf:about="&tiger_king;Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#Place -->
+
+    <owl:Class rdf:about="&tiger_king;Place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#Pratibandapuram -->
+
+    <owl:Class rdf:about="&tiger_king;Pratibandapuram">
+        <rdfs:subClassOf rdf:resource="&tiger_king;Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#Story -->
+
+    <owl:Class rdf:about="&tiger_king;Story"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#Tiger -->
+
+    <owl:Class rdf:about="&tiger_king;Tiger">
+        <rdfs:subClassOf rdf:resource="&tiger_king;Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#Tiger_king -->
+
+    <owl:Class rdf:about="&tiger_king;Tiger_king">
+        <rdfs:subClassOf rdf:resource="&tiger_king;Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#A.C.T.C -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;A.C.T.C">
+        <owl:sameAs rdf:resource="&tiger_king;M.A.D"/>
+        <owl:sameAs rdf:resource="&tiger_king;Maharaja_of_Pratibandapuram"/>
+        <owl:sameAs rdf:resource="&tiger_king;Maharajadhiraja_Visva_Bhuvana_Samrat"/>
+        <owl:sameAs rdf:resource="&tiger_king;Tiger_king"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#All_those_who_are_born_will_one_day_have_to_die.We_don&apos;t_need_your_predictions_to_know_that.There_would_be_some_sense_in_it_if_you_could_tell_us_the_manner_of_that_death. -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;All_those_who_are_born_will_one_day_have_to_die.We_don&apos;t_need_your_predictions_to_know_that.There_would_be_some_sense_in_it_if_you_could_tell_us_the_manner_of_that_death."/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#Astonishing_phrase -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;Astonishing_phrase">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tiger_king;emergedFrom"/>
+                <owl:someValuesFrom rdf:resource="&tiger_king;Conversation"/>
+            </owl:Restriction>
+        </rdf:type>
+        <emergedFrom rdf:resource="&tiger_king;the_lips_of_the_ten_day_old__Jilani_Jung_Jung_Bahadur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#Astrologers -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;Astrologers">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tiger_king;foretold"/>
+                <owl:someValuesFrom rdf:resource="&tiger_king;Conversation"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:comment>sdgg</rdfs:comment>
+        <foretold rdf:resource="&tiger_king;The_child_will_grow_up_to_become_the_warrior_of_warriors,_hero_of_heroes,_champion_of_champions_.But_...This_is_a_secret_which_should_not_be_revealed_at_all.And_yet_we_are_forced_to_speak_out.The_child_born_under_this_star_will_one_day_have_to_meet_his_death"/>
+        <foretold rdf:resource="&tiger_king;one_day_the_king_would_actually_have_to_die"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#C.R.C.K -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;C.R.C.K">
+        <owl:sameAs rdf:resource="&tiger_king;M.A.D"/>
+        <owl:sameAs rdf:resource="&tiger_king;Maharaja_of_Pratibandapuram"/>
+        <owl:sameAs rdf:resource="&tiger_king;Maharajadhiraja_Visva_Bhuvana_Samrat"/>
+        <owl:sameAs rdf:resource="&tiger_king;Tiger_king"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#Chief_astrologer -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;Chief_astrologer">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tiger_king;fixedHisEyesUpon"/>
+                <owl:someValuesFrom rdf:resource="&tiger_king;Person"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tiger_king;placed"/>
+                <owl:someValuesFrom rdf:resource="&tiger_king;Event"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tiger_king;gazed"/>
+                <owl:someValuesFrom rdf:resource="&tiger_king;Person"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tiger_king;explained"/>
+                <owl:someValuesFrom rdf:resource="&tiger_king;Conversation"/>
+            </owl:Restriction>
+        </rdf:type>
+        <explained rdf:resource="&tiger_king;The_prince_was_born_in_the_hour_of_the_bull._The_bull_and_the_tiger_are_enemies,therefore_death_comes_from_the_tiger."/>
+        <placed rdf:resource="&tiger_king;his_finger_on_his_nose_in_wonder"/>
+        <gazed rdf:resource="&tiger_king;intently_at_the_baby"/>
+        <fixedHisEyesUpon rdf:resource="&tiger_king;the_little_prince"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#Extraordinary_interest -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;Extraordinary_interest"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#His_Highness_Jamedar-General -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;His_Highness_Jamedar-General">
+        <owl:sameAs rdf:resource="&tiger_king;M.A.D"/>
+        <owl:sameAs rdf:resource="&tiger_king;Maharaja_of_Pratibandapuram"/>
+        <owl:sameAs rdf:resource="&tiger_king;Maharajadhiraja_Visva_Bhuvana_Samrat"/>
+        <owl:sameAs rdf:resource="&tiger_king;Tiger_king"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#Kalki -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;Kalki">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tiger_king;author_of"/>
+                <owl:someValuesFrom rdf:resource="&tiger_king;Story"/>
+            </owl:Restriction>
+        </rdf:type>
+        <author_of rdf:resource="&tiger_king;The_Tiger_King"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#Khiledar_Major -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;Khiledar_Major">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tiger_king;hero_of"/>
+                <owl:someValuesFrom rdf:resource="&tiger_king;Story"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tiger_king;maharaja_of"/>
+                <owl:someValuesFrom rdf:resource="&tiger_king;Place"/>
+            </owl:Restriction>
+        </rdf:type>
+        <owl:sameAs rdf:resource="&tiger_king;M.A.D"/>
+        <owl:sameAs rdf:resource="&tiger_king;Maharaja_of_Pratibandapuram"/>
+        <owl:sameAs rdf:resource="&tiger_king;Maharajadhiraja_Visva_Bhuvana_Samrat"/>
+        <maharaja_of rdf:resource="&tiger_king;Pratibandapuram"/>
+        <hero_of rdf:resource="&tiger_king;The_Tiger_King"/>
+        <owl:sameAs rdf:resource="&tiger_king;Tiger_king"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#M.A.D -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;M.A.D">
+        <owl:sameAs rdf:resource="&tiger_king;Maharaja_of_Pratibandapuram"/>
+        <owl:sameAs rdf:resource="&tiger_king;Maharajadhiraja_Visva_Bhuvana_Samrat"/>
+        <owl:sameAs rdf:resource="&tiger_king;Sata_Vyaghra_Samhari"/>
+        <owl:sameAs rdf:resource="&tiger_king;Sir_Jilani_Jung_Jung_Bahadur"/>
+        <owl:sameAs rdf:resource="&tiger_king;Tiger_king"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#Maharaja_of_Pratibandapuram -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;Maharaja_of_Pratibandapuram">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tiger_king;identified_as"/>
+                <owl:someValuesFrom rdf:resource="&tiger_king;Person"/>
+            </owl:Restriction>
+        </rdf:type>
+        <identified_as rdf:resource="&tiger_king;A.C.T.C"/>
+        <identified_as rdf:resource="&tiger_king;C.R.C.K"/>
+        <identified_as rdf:resource="&tiger_king;His_Highness_Jamedar-General"/>
+        <identified_as rdf:resource="&tiger_king;Khiledar_Major"/>
+        <identified_as rdf:resource="&tiger_king;M.A.D"/>
+        <identified_as rdf:resource="&tiger_king;Maharajadhiraja_Visva_Bhuvana_Samrat"/>
+        <owl:sameAs rdf:resource="&tiger_king;Maharajadhiraja_Visva_Bhuvana_Samrat"/>
+        <identified_as rdf:resource="&tiger_king;Sata_Vyaghra_Samhari"/>
+        <owl:sameAs rdf:resource="&tiger_king;Sata_Vyaghra_Samhari"/>
+        <identified_as rdf:resource="&tiger_king;Sir_Jilani_Jung_Jung_Bahadur"/>
+        <owl:sameAs rdf:resource="&tiger_king;Sir_Jilani_Jung_Jung_Bahadur"/>
+        <identified_as rdf:resource="&tiger_king;Tiger_king"/>
+        <owl:sameAs rdf:resource="&tiger_king;Tiger_king"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#Maharajadhiraja_Visva_Bhuvana_Samrat -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;Maharajadhiraja_Visva_Bhuvana_Samrat">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tiger_king;identified_as"/>
+                <owl:someValuesFrom rdf:resource="&tiger_king;Person"/>
+            </owl:Restriction>
+        </rdf:type>
+        <identified_as rdf:resource="&tiger_king;A.C.T.C"/>
+        <identified_as rdf:resource="&tiger_king;C.R.C.K"/>
+        <identified_as rdf:resource="&tiger_king;His_Highness_Jamedar-General"/>
+        <identified_as rdf:resource="&tiger_king;Khiledar_Major"/>
+        <identified_as rdf:resource="&tiger_king;M.A.D"/>
+        <identified_as rdf:resource="&tiger_king;Maharajadhiraja_Visva_Bhuvana_Samrat"/>
+        <identified_as rdf:resource="&tiger_king;Sata_Vyaghra_Samhari"/>
+        <owl:sameAs rdf:resource="&tiger_king;Sata_Vyaghra_Samhari"/>
+        <identified_as rdf:resource="&tiger_king;Sir_Jilani_Jung_Jung_Bahadur"/>
+        <owl:sameAs rdf:resource="&tiger_king;Sir_Jilani_Jung_Jung_Bahadur"/>
+        <owl:sameAs rdf:resource="&tiger_king;Tiger_king"/>
+        <identified_as rdf:resource="&tiger_king;Tiger_king"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#O_wise_prophets -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;O_wise_prophets"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#O_wise_prophets!_It_was_I_who_spoke -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;O_wise_prophets!_It_was_I_who_spoke"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#Pratibandapuram -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;Pratibandapuram">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tiger_king;hasMaharaja"/>
+                <owl:someValuesFrom rdf:resource="&tiger_king;Person"/>
+            </owl:Restriction>
+        </rdf:type>
+        <hasMaharaja rdf:resource="&tiger_king;Khiledar_Major"/>
+        <hasMaharaja rdf:resource="&tiger_king;Tiger_king"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#Sata_Vyaghra_Samhari -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;Sata_Vyaghra_Samhari">
+        <owl:sameAs rdf:resource="&tiger_king;Tiger_king"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#Sir_Jilani_Jung_Jung_Bahadur -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;Sir_Jilani_Jung_Jung_Bahadur">
+        <owl:sameAs rdf:resource="&tiger_king;Tiger_king"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#The_Tiger_King -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;The_Tiger_King">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tiger_king;hasAuthor"/>
+                <owl:someValuesFrom rdf:resource="&tiger_king;Person"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tiger_king;hasHero"/>
+                <owl:someValuesFrom rdf:resource="&tiger_king;Story"/>
+            </owl:Restriction>
+        </rdf:type>
+        <hasAuthor rdf:resource="&tiger_king;Kalki"/>
+        <hasHero rdf:resource="&tiger_king;Khiledar_Major"/>
+        <hasHero rdf:resource="&tiger_king;Tiger_king"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#The_child_will_grow_up_to_become_the_warrior_of_warriors,_hero_of_heroes,_champion_of_champions_.But_...This_is_a_secret_which_should_not_be_revealed_at_all.And_yet_we_are_forced_to_speak_out.The_child_born_under_this_star_will_one_day_have_to_meet_his_death -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;The_child_will_grow_up_to_become_the_warrior_of_warriors,_hero_of_heroes,_champion_of_champions_.But_...This_is_a_secret_which_should_not_be_revealed_at_all.And_yet_we_are_forced_to_speak_out.The_child_born_under_this_star_will_one_day_have_to_meet_his_death"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#The_infant_born_ten_days_ago -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;The_infant_born_ten_days_ago">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tiger_king;uttered"/>
+                <owl:someValuesFrom rdf:resource="&tiger_king;Conversation"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tiger_king;hadEnunciated"/>
+                <owl:someValuesFrom rdf:resource="&tiger_king;Conversation"/>
+            </owl:Restriction>
+        </rdf:type>
+        <uttered rdf:resource="&tiger_king;All_those_who_are_born_will_one_day_have_to_die.We_don&apos;t_need_your_predictions_to_know_that.There_would_be_some_sense_in_it_if_you_could_tell_us_the_manner_of_that_death."/>
+        <hadEnunciated rdf:resource="&tiger_king;O_wise_prophets"/>
+        <hadEnunciated rdf:resource="&tiger_king;O_wise_prophets!_It_was_I_who_spoke"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#The_prince_was_born_in_the_hour_of_the_bull._The_bull_and_the_tiger_are_enemies,therefore_death_comes_from_the_tiger. -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;The_prince_was_born_in_the_hour_of_the_bull._The_bull_and_the_tiger_are_enemies,therefore_death_comes_from_the_tiger.">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tiger_king;explained_by"/>
+                <owl:someValuesFrom rdf:resource="&tiger_king;Person"/>
+            </owl:Restriction>
+        </rdf:type>
+        <explained_by rdf:resource="&tiger_king;Chief_astrologer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#Tiger_King&apos;s_Death -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;Tiger_King&apos;s_Death">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tiger_king;matter_of"/>
+                <owl:someValuesFrom rdf:resource="&tiger_king;Event"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#Tiger_king -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;Tiger_king">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tiger_king;identified_as"/>
+                <owl:someValuesFrom rdf:resource="&tiger_king;Person"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tiger_king;maharaja_of"/>
+                <owl:someValuesFrom rdf:resource="&tiger_king;Place"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tiger_king;hero_of"/>
+                <owl:someValuesFrom rdf:resource="&tiger_king;Story"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tiger_king;hasReached"/>
+                <owl:someValuesFrom rdf:resource="&tiger_king;Place"/>
+            </owl:Restriction>
+        </rdf:type>
+        <identified_as rdf:resource="&tiger_king;A.C.T.C"/>
+        <identified_as rdf:resource="&tiger_king;C.R.C.K"/>
+        <identified_as rdf:resource="&tiger_king;His_Highness_Jamedar-General"/>
+        <identified_as rdf:resource="&tiger_king;Khiledar_Major"/>
+        <identified_as rdf:resource="&tiger_king;M.A.D"/>
+        <identified_as rdf:resource="&tiger_king;Maharajadhiraja_Visva_Bhuvana_Samrat"/>
+        <maharaja_of rdf:resource="&tiger_king;Pratibandapuram"/>
+        <identified_as rdf:resource="&tiger_king;Sata_Vyaghra_Samhari"/>
+        <identified_as rdf:resource="&tiger_king;Sir_Jilani_Jung_Jung_Bahadur"/>
+        <hero_of rdf:resource="&tiger_king;The_Tiger_King"/>
+        <hasReached rdf:resource="&tiger_king;final_abode_of_all_living_creatures"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#final_abode_of_all_living_creatures -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;final_abode_of_all_living_creatures"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#his_finger_on_his_nose_in_wonder -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;his_finger_on_his_nose_in_wonder"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#intently_at_the_baby -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;intently_at_the_baby"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#one_day_the_king_would_actually_have_to_die -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;one_day_the_king_would_actually_have_to_die"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#the_lips_of_the_ten_day_old__Jilani_Jung_Jung_Bahadur -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;the_lips_of_the_ten_day_old__Jilani_Jung_Jung_Bahadur"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2016/3/tiger_king#the_little_prince -->
+
+    <owl:NamedIndividual rdf:about="&tiger_king;the_little_prince"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&tiger_king;Astrologers"/>
+            <rdf:Description rdf:about="&tiger_king;Maharajadhiraja_Visva_Bhuvana_Samrat"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&tiger_king;Kalki"/>
+            <rdf:Description rdf:about="&tiger_king;Maharaja_of_Pratibandapuram"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&tiger_king;Kalki"/>
+            <rdf:Description rdf:about="&tiger_king;Tiger_king"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&tiger_king;Kalki"/>
+            <rdf:Description rdf:about="&tiger_king;Khiledar_Major"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&tiger_king;Chief_astrologer"/>
+            <rdf:Description rdf:about="&tiger_king;Maharaja_of_Pratibandapuram"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&tiger_king;Astrologers"/>
+            <rdf:Description rdf:about="&tiger_king;Khiledar_Major"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&tiger_king;Chief_astrologer"/>
+            <rdf:Description rdf:about="&tiger_king;Kalki"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&tiger_king;Astrologers"/>
+            <rdf:Description rdf:about="&tiger_king;M.A.D"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&tiger_king;Astrologers"/>
+            <rdf:Description rdf:about="&tiger_king;Tiger_king"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&tiger_king;Kalki"/>
+            <rdf:Description rdf:about="&tiger_king;Maharajadhiraja_Visva_Bhuvana_Samrat"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&tiger_king;Chief_astrologer"/>
+            <rdf:Description rdf:about="&tiger_king;Maharajadhiraja_Visva_Bhuvana_Samrat"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&tiger_king;Astrologers"/>
+            <rdf:Description rdf:about="&tiger_king;Maharaja_of_Pratibandapuram"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&tiger_king;Kalki"/>
+            <rdf:Description rdf:about="&tiger_king;M.A.D"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&tiger_king;Chief_astrologer"/>
+            <rdf:Description rdf:about="&tiger_king;Tiger_king"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&tiger_king;Chief_astrologer"/>
+            <rdf:Description rdf:about="&tiger_king;Khiledar_Major"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&tiger_king;Chief_astrologer"/>
+            <rdf:Description rdf:about="&tiger_king;M.A.D"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

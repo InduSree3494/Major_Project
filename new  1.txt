@@ -1,0 +1,9 @@
+"Let tigers beware!"
+(ROOT (S (`` ``) (VP (VB Let) (S (NP (NNS tigers)) (VP (VB beware)))) (. !) ('' '')))
+
+"O wise prophets"
+(ROOT (S (VP (`` ``) (VB O) (NP (JJ wise) (NNS prophets)) ('' ''))))
+
+"The prince was born in the hour of the bull.""
+(ROOT (S (`` ``) (NP (DT The) (NN prince)) (VP (VBD was) (VP (VBN born) (PP (IN in) (NP (NP (DT the) (NN hour)) (PP (IN of) (NP (DT the) (NN bull))))))) (. .) ('' '')))
+

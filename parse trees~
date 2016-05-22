@@ -1,0 +1,24 @@
+1.Who is the author of The Tiger King?
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VBZ is) (NP (NP (DT the) (NN author)) (PP (IN of) (NP (DT The) (NNP Tiger) (NNP King))))) (. ?)))
+
+2.Who is the hero of the story?
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VBZ is) (NP (NP (DT the) (NN hero)) (PP (IN of) (NP (DT the) (NN story))))) (. ?)))
+
+3.Who is identified as His Highness Jamedar General?
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VBZ is) (VP (VBN identified) (PP (IN as) (NP (PRP$ His) (NNP Highness) (NNP Jamedar) (NNP General))))) (. ?)))
+
+
+4.Who has reached the final abode of all living creatures ?
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBZ has) (VP (VBN reached) (NP (NP (DT the) (JJ final) (NN abode)) (PP (IN of) (NP (DT all) (VBG living) (NNS creatures))))))) (. ?)))
+
+5.Who is the king of pratibandapuram?
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VBZ is) (NP (NP (DT the) (NN king)) (PP (IN of) (NP (NN pratibandapuram))))) (. ?)))
+
+6.Who gazed intently at the baby?
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD gazed) (ADVP (RB intently)) (PP (IN at) (NP (DT the) (NN baby))))) (. ?)))
+
+7.Who foretold “This is a secret which should not be revealed at all".?
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD foretold) (`` ``) (SBAR (S (NP (DT This)) (VP (VBZ is) (NP (NP (DT a) (NN secret)) (SBAR (WHNP (WDT which)) (S (VP (MD should) (RB not) (VP (VB be) (VP (VBN revealed) (ADVP (IN at) (DT all))))))))))) ('' ''))) (. ?)))
+
+8.Who brought up Tiger king?
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD brought) (PRT (RP up)) (NP (NNP Tiger) (NN king)))) (. ?)))

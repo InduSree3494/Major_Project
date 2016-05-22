@@ -1,0 +1,368 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://localhost/tigerking.owl#"
+     xml:base="https://localhost/tigerking.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://localhost/tigerking.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://localhost/tigerking.owl#All_those_who_are_born_in_one_day_have_to_die.We_dont_need_your_prdictions_to_know_that.There_would_be_some_sense_in_it_if_u_could_tell_us_the_manner_of_that_death -->
+
+    <owl:ObjectProperty rdf:about="https://localhost/tigerking.owl#All_those_who_are_born_in_one_day_have_to_die.We_dont_need_your_prdictions_to_know_that.There_would_be_some_sense_in_it_if_u_could_tell_us_the_manner_of_that_death">
+        <rdfs:subPropertyOf rdf:resource="https://localhost/tigerking.owl#uttered"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://localhost/tigerking.owl#Tiger_King_is_dead -->
+
+    <owl:ObjectProperty rdf:about="https://localhost/tigerking.owl#Tiger_King_is_dead">
+        <rdfs:subPropertyOf rdf:resource="https://localhost/tigerking.owl#about_Dasaratha"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://localhost/tigerking.owl#about_Dasaratha -->
+
+    <owl:ObjectProperty rdf:about="https://localhost/tigerking.owl#about_Dasaratha">
+        <rdfs:subPropertyOf rdf:resource="https://localhost/tigerking.owl#said_to"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://localhost/tigerking.owl#as_soon_as_Tiger_kIng_was_born -->
+
+    <owl:ObjectProperty rdf:about="https://localhost/tigerking.owl#as_soon_as_Tiger_kIng_was_born">
+        <rdfs:subPropertyOf rdf:resource="https://localhost/tigerking.owl#foretold"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://localhost/tigerking.owl#foretold -->
+
+    <owl:ObjectProperty rdf:about="https://localhost/tigerking.owl#foretold">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="https://localhost/tigerking.owl#Astrologer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="https://localhost/tigerking.owl#Death_of_Tiger_King"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://localhost/tigerking.owl#gazed -->
+
+    <owl:ObjectProperty rdf:about="https://localhost/tigerking.owl#gazed"/>
+    
+
+
+    <!-- https://localhost/tigerking.owl#intently -->
+
+    <owl:ObjectProperty rdf:about="https://localhost/tigerking.owl#intently">
+        <rdfs:subPropertyOf rdf:resource="https://localhost/tigerking.owl#gazed"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://localhost/tigerking.owl#is_a_Manner_of -->
+
+    <owl:ObjectProperty rdf:about="https://localhost/tigerking.owl#is_a_Manner_of">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="https://localhost/tigerking.owl#Death_of_Tiger_King"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="https://localhost/tigerking.owl#Extraordinary_Interest"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://localhost/tigerking.owl#kingof -->
+
+    <owl:ObjectProperty rdf:about="https://localhost/tigerking.owl#kingof">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="https://localhost/tigerking.owl#His_Highness_Jamedar-General"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="https://localhost/tigerking.owl#Pratibandapuram"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://localhost/tigerking.owl#revealed -->
+
+    <owl:ObjectProperty rdf:about="https://localhost/tigerking.owl#revealed">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="https://localhost/tigerking.owl#Death_of_Tiger_King"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="https://localhost/tigerking.owl#End_of_Tale"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://localhost/tigerking.owl#said_to -->
+
+    <owl:ObjectProperty rdf:about="https://localhost/tigerking.owl#said_to">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="https://localhost/tigerking.owl#Bharata"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="https://localhost/tigerking.owl#Rama"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://localhost/tigerking.owl#uttered -->
+
+    <owl:ObjectProperty rdf:about="https://localhost/tigerking.owl#uttered">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="https://localhost/tigerking.owl#Royal_Infant"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="https://localhost/tigerking.owl#Astrologer"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://localhost/tigerking.owl#&apos;O_wise_prophets&apos; -->
+
+    <owl:ObjectProperty rdf:about="https://localhost/tigerking.owl#&apos;O_wise_prophets&apos;">
+        <rdfs:subPropertyOf rdf:resource="https://localhost/tigerking.owl#uttered"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://localhost/tigerking.owl#&apos;O_wise_prophets&apos;.It_was_I_who_spoke. -->
+
+    <owl:ObjectProperty rdf:about="https://localhost/tigerking.owl#&apos;O_wise_prophets&apos;.It_was_I_who_spoke.">
+        <rdfs:subPropertyOf rdf:resource="https://localhost/tigerking.owl#uttered"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://localhost/tigerking.owl#Astrologer -->
+
+    <owl:Class rdf:about="https://localhost/tigerking.owl#Astrologer">
+        <rdfs:subClassOf rdf:resource="https://localhost/tigerking.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://localhost/tigerking.owl#Bharata -->
+
+    <owl:Class rdf:about="https://localhost/tigerking.owl#Bharata">
+        <rdfs:subClassOf rdf:resource="https://localhost/tigerking.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://localhost/tigerking.owl#Death_of_Tiger_King -->
+
+    <owl:Class rdf:about="https://localhost/tigerking.owl#Death_of_Tiger_King"/>
+    
+
+
+    <!-- https://localhost/tigerking.owl#End_of_Tale -->
+
+    <owl:Class rdf:about="https://localhost/tigerking.owl#End_of_Tale"/>
+    
+
+
+    <!-- https://localhost/tigerking.owl#Extraordinary_Interest -->
+
+    <owl:Class rdf:about="https://localhost/tigerking.owl#Extraordinary_Interest"/>
+    
+
+
+    <!-- https://localhost/tigerking.owl#His_Highness_Jamedar-General -->
+
+    <owl:Class rdf:about="https://localhost/tigerking.owl#His_Highness_Jamedar-General">
+        <rdfs:subClassOf rdf:resource="https://localhost/tigerking.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://localhost/tigerking.owl#Person -->
+
+    <owl:Class rdf:about="https://localhost/tigerking.owl#Person"/>
+    
+
+
+    <!-- https://localhost/tigerking.owl#Place -->
+
+    <owl:Class rdf:about="https://localhost/tigerking.owl#Place"/>
+    
+
+
+    <!-- https://localhost/tigerking.owl#Pratibandapuram -->
+
+    <owl:Class rdf:about="https://localhost/tigerking.owl#Pratibandapuram">
+        <rdfs:subClassOf rdf:resource="https://localhost/tigerking.owl#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- https://localhost/tigerking.owl#Rama -->
+
+    <owl:Class rdf:about="https://localhost/tigerking.owl#Rama">
+        <rdfs:subClassOf rdf:resource="https://localhost/tigerking.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://localhost/tigerking.owl#Royal_Infant -->
+
+    <owl:Class rdf:about="https://localhost/tigerking.owl#Royal_Infant">
+        <rdfs:subClassOf rdf:resource="https://localhost/tigerking.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://localhost/tigerking.owl#Tiger_King -->
+
+    <owl:Class rdf:about="https://localhost/tigerking.owl#Tiger_King">
+        <rdfs:subClassOf rdf:resource="https://localhost/tigerking.owl#Royal_Infant"/>
+    </owl:Class>
+    
+
+
+    <!-- https://localhost/tigerking.owl#baby -->
+
+    <owl:Class rdf:about="https://localhost/tigerking.owl#baby">
+        <rdfs:subClassOf rdf:resource="https://localhost/tigerking.owl#Royal_Infant"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://localhost/tigerking.owl#A.C.T.C -->
+
+    <owl:NamedIndividual rdf:about="https://localhost/tigerking.owl#A.C.T.C"/>
+    
+
+
+    <!-- https://localhost/tigerking.owl#C.R.C.K -->
+
+    <owl:NamedIndividual rdf:about="https://localhost/tigerking.owl#C.R.C.K"/>
+    
+
+
+    <!-- https://localhost/tigerking.owl#Khiledar-Major -->
+
+    <owl:NamedIndividual rdf:about="https://localhost/tigerking.owl#Khiledar-Major"/>
+    
+
+
+    <!-- https://localhost/tigerking.owl#M.A.D -->
+
+    <owl:NamedIndividual rdf:about="https://localhost/tigerking.owl#M.A.D"/>
+    
+
+
+    <!-- https://localhost/tigerking.owl#Maharajadhiraja_Visva_Bhuvana_Samrat -->
+
+    <owl:NamedIndividual rdf:about="https://localhost/tigerking.owl#Maharajadhiraja_Visva_Bhuvana_Samrat"/>
+    
+
+
+    <!-- https://localhost/tigerking.owl#Pratibandapuram -->
+
+    <owl:NamedIndividual rdf:about="https://localhost/tigerking.owl#Pratibandapuram">
+        <rdf:type rdf:resource="https://localhost/tigerking.owl#Place"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://localhost/tigerking.owl#Sata_Vyagraha_Samhari -->
+
+    <owl:NamedIndividual rdf:about="https://localhost/tigerking.owl#Sata_Vyagraha_Samhari"/>
+    
+
+
+    <!-- https://localhost/tigerking.owl#Sir_Jilani_Jung_Jung_Bahadur -->
+
+    <owl:NamedIndividual rdf:about="https://localhost/tigerking.owl#Sir_Jilani_Jung_Jung_Bahadur"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->
+
